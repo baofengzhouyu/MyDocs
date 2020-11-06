@@ -33,3 +33,7 @@ for pd in $parent_dir
        fi
 
      done
+
+
+hdfs dfs -put  $log_file  $hdfs_log_dir   1>> $log_file 2>> $log_file
+#rm  -rf $log_file
